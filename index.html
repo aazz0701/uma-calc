@@ -155,7 +155,7 @@
                 price: 390, 
                 points: 440, 
                 limit: 1, 
-                badge: "細水長流", 
+                badge: "", 
                 category: "limited", 
                 desc: "" 
             },
@@ -259,7 +259,7 @@
                 const itemCP = unitPrice > 0 ? (product.gems / unitPrice).toFixed(2) : 0;
                 
                 // 特殊標記：如果積分 > 價格 20% 以上，顯示積分UP
-                const isPointsUp = product.points > product.price * 1.2;
+                const isPointsUp = product.points > product.price * 2;
 
                 return (
                     <div className={`bg-white rounded-xl shadow-sm border transition-all duration-200 overflow-hidden relative ${qty > 0 ? 'border-emerald-400 ring-1 ring-emerald-100' : 'border-slate-200'}`}>
